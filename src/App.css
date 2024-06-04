@@ -1,0 +1,22 @@
+/* SlidingText.css */
+.sliding-container {
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+  }
+  
+  .sliding-text {
+    display: inline-block;
+    animation: slide infinite 10s linear;
+    color: white; /* Set text color to white */
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
