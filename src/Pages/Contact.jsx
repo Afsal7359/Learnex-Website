@@ -144,8 +144,8 @@ const Contact = () => {
                 <div className="flex flex-col mt-6 text-white">
                   <div className="leading-[122%]">Get in touch</div>
                   <div className="mt-4 leading-6">
-                    Dotspace Business Center, Total Tower Near Devankulangara,
-                    Edappally Kochi Kerala 682A24
+                    Dotspace Business Center, Total TowerNear Devankulangara,
+                    EdappallyKochiKerala 682A24
                   </div>
                 </div>
               </div>

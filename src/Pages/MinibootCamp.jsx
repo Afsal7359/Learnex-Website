@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../Components/Navbar/Navbar'
 import Faq from '../Components/FAQ/Faq'
 import Content from '../Components/DayCard/Content'
+import Programimg from '../assets/image/program.png'
 
 const MinibootCamp = () => {
   return (
@@ -242,17 +243,18 @@ const MinibootCamp = () => {
             className="self-start mt-28 ml-72 border-2 border-orange-400 border-solid aspect-square stroke-[2px] stroke-orange-400 w-[37px] max-md:mt-10 max-md:ml-2.5"
           />
         </div>
-       
-
+        <div className='relative flex-col px-20 mt-16 w-full max-md:px-5 max-md:mt-10 max-md:max-w-full'>
+          <img src={Programimg} alt="" />
+          </div>
+{/* 
         <div className="flex flex-col items-center bg-black text-white py-20 px-10">
       <h2 className="text-4xl font-bold mb-8" style={{ backgroundImage: 'linear-gradient(92deg, #FF8E26 30.11%, #9C4DFF 80.07%)', WebkitBackgroundClip: 'text', color: 'transparent' }}>
         How does the program works?
       </h2>
       <div className="relative flex flex-col items-center w-full max-w-4xl mx-auto">
-        {/* Vertical Line */}
+
         <div className="absolute top-0 bottom-0 left-1/2 w-1 bg-gray-400 transform -translate-x-1/2"></div>
 
-        {/* Row 1 */}
         <div className="flex items-center justify-between w-full mb-6">
           <div className="flex items-center space-x-4 w-1/2 justify-end">
             <div className="bg-orange-500 p-4 rounded-full text-xl">01  <span>Enroll</span></div>
@@ -263,7 +265,7 @@ const MinibootCamp = () => {
           </div>
         </div>
 
-        {/* Row 2 */}
+
         <div className="flex items-center justify-between w-full mb-6">
           <div className="flex items-center space-x-4 w-1/2">
             <span className="hidden md:inline"></span>
@@ -274,7 +276,7 @@ const MinibootCamp = () => {
           </div>
         </div>
 
-        {/* Row 3 */}
+        
         <div className="flex items-center justify-between w-full mb-6">
           <div className="flex items-center space-x-4 w-1/2 justify-end">
             <div className="bg-purple-500 p-4 rounded-full text-xl">03 <span>Solve a problem</span></div>
@@ -285,7 +287,7 @@ const MinibootCamp = () => {
           </div>
         </div>
 
-        {/* Row 4 */}
+        
         <div className="flex items-center justify-between w-full mb-6">
           <div className="flex items-center space-x-4 w-1/2">
             <span className="hidden md:inline"></span>
@@ -296,7 +298,7 @@ const MinibootCamp = () => {
           </div>
         </div>
 
-        {/* Row 5 */}
+        
         <div className="flex items-center justify-between w-full mb-6">
           <div className="flex items-center space-x-4 w-1/2 justify-end">
             <div className="bg-indigo-500 p-4 rounded-full text-xl">05  <span>Hands on Figma Learnings</span></div>
@@ -307,7 +309,7 @@ const MinibootCamp = () => {
           </div>
         </div>
 
-        {/* Row 6 */}
+        
         <div className="flex items-center justify-between w-full">
           <div className="flex items-center space-x-4 w-1/2">
             <span className="hidden md:inline"></span>
@@ -318,7 +320,7 @@ const MinibootCamp = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
 
 
         <div className="flex flex-col justify-center p-20 mt-32 w-full bg-blue-950 max-w-[1443px] max-md:px-5 max-md:mt-10 max-md:max-w-full">

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../Components/Navbar/Navbar';
 import Faq from '../Components/FAQ/Faq';
-
+import imgup from '../assets/image/upcomming.png'
 const Home = () => {
     
   return (
@@ -11,6 +11,7 @@ const Home = () => {
       <div className="flex overflow-hidden relative flex-col pb-16 w-full fill-gray-800 min-h-[690px] max-md:max-w-full">
        
         <Navbar/>
+        
         <div className="flex relative flex-col px-20 mt-16 w-full max-md:px-5 max-md:mt-10 max-md:max-w-full">
           <div className="max-md:mr-2.5 max-md:max-w-full">
             <div className="flex gap-5 max-md:flex-col max-md:gap-0">
@@ -97,7 +98,7 @@ const Home = () => {
       </div>
       <div className="flex z-10 flex-col pr-6 pl-20 -mt-2 w-full max-md:px-5 max-md:max-w-full">
       <div className="sliding-container">
-      <div className="flex gap-5 self-center w-full font-bold leading-[448.8px] max-w-[1205px] text-[374px] text-zinc-900 max-md:flex-wrap max-md:max-w-full max-md:text-4xl">
+      <div className="flex gap-5 self-center w-full font-bold leading-[448.8px] max-w-[1205px] text-[374px] text-zinc-900 max-md:flex-wrap max-md:max-w-full max-md:text-5xl">
         <div className="shrink-0 self-start mt-16 w-4 h-4 border-2 border-white border-solid max-md:mt-10" />
         <div className="flex-auto max-md:max-w-full max-md:text-4xl sliding-text" >
           Learnex
@@ -269,9 +270,14 @@ const Home = () => {
           className="self-center mt-20 w-full aspect-[2.08] max-w-[1231px] stroke-[4px] stroke-fuchsia-500 max-md:mt-10 max-md:max-w-full"
         />
       </div>
+      {/* <div className='relative flex-col px-20 mt-16 w-full max-md:px-5 max-md:mt-10 max-md:max-w-full '>
+         <img src={imgup} alt="" />
+      </div> */}
       <div className="self-center mt-44 text-6xl font-bold text-white bg-clip-text bg-[linear-gradient(92deg,#FF8E26_30.11%,#9C4DFF_80.07%)] leading-[69.6px] max-md:mt-10 max-md:max-w-full max-md:text-4xl">
         <span className="text-white">Upcomming</span> bootcamps
       </div>
+      
+        
       <div className="self-center mt-2.5 text-lg font-medium tracking-normal leading-7 text-slate-400 max-md:max-w-full">
         Here is our upcoming bootcamp schedules .
       </div>

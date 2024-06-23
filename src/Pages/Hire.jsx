@@ -1,12 +1,13 @@
 import React from 'react'
 import Navbar from '../Components/Navbar/Navbar'
+import hireimg from '../assets/image/hireimg.png'
 
 const Hire = () => {
   return (
     <div>
         <div className="flex flex-col bg-neutral-900">
     <Navbar/>
-    <div className="bg-darkblue text-white py-12">
+    {/* <div className="bg-darkblue text-white py-12">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-6 lg:px-0">
         <div className="lg:w-1/2 mb-12 lg:mb-0 px-10 mx-5">
           <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6" style={{ backgroundImage: 'linear-gradient(92deg, #FF8E26 30.11%, #9C4DFF 80.07%)', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' }}>
@@ -80,7 +81,9 @@ const Hire = () => {
           <img style={{height:"310px",width:"80%",borderRadius:"15px"}} src="https://s3-alpha-sig.figma.com/img/6c7c/0fe2/4f0f4342e628cbd2b48d7e0a9e8e39af?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=C~FV~tBclzHHOFn9Z1SC1GK~VCpFALE-29jIPwIis7rgUK897SW~FtpcqFHVn-6LMXbV9yVQT5wju64hstfnDsdqf9fvf-qO5vKYZlnRbvbtTveLflxn6a5XHdj1Njsp6UOi3Nxoi~BV9azwGh1GpaJGdMxdbPEHN7sPLVDMiVcJHkpbflcIMrf0Q72iR13Vx7cAQ0yRU85C01wL5goHPYEWDEIJ8hIquzIaIIuy38InoM6fef22MPJBZYvKUJVHOjsZQ-a~4ef1Sxc5t~31frnQ8Fnqw6Fm6C59fAQBjXDgzYjEwSzQyRRU3RyE7wpoRmamb8EZ4Il1H3SHu2BKyA__" alt="Illustration" className="max-w-full h-auto" />
         </div>
       </div>
-    </div>
+    </div> */}
+    <img src={hireimg} alt="" />
+
     <div className="flex flex-col justify-center px-3 py-12 mt-24 w-full max-md:mt-10 max-md:max-w-full">
   <div className="px-20 max-md:px-5 max-md:max-w-full">
     <div className="flex gap-5 max-md:flex-col max-md:gap-0">

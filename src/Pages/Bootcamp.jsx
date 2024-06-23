@@ -6,6 +6,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay ,A11y } from 'swiper/modules';
+import Image1 from '../assets/image/testmonial3.png'
+import Image2 from '../assets/image/testmonial2.png'
+import Image3 from '../assets/image/testmonial4.png'
 
 
 const Bootcamp = () => {
@@ -539,7 +542,7 @@ const Bootcamp = () => {
               <div className="flex overflow-hidden relative flex-col grow pt-20 pb-7 min-h-[485px] max-md:mt-10 max-md:max-w-full">
                 <img
                   loading="lazy"
-                  srcSet="https://s3-alpha-sig.figma.com/img/eba3/87d5/8c93c7744eea9a5f9a761b4447c69318?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=l~WvpNE6CAr75SEqhknR-PFSvOTx-t74EurnJfE6EOlQDnXonQH-CzSKgt2wMGABkEBL~2iIJpnwhLbqX1WbJcvgvfqxT3TH~yJU0l9xpjKnUTxt3ZkyjaVCe48acHguc8eYkWFhwusoCaDf7AguLMgg-98oHUh7N8jWV-kQaBfBsvt4y59PrcvKPGnkKLmwx-e1d5FE1PwvCF58zpCJQz42tTmO1jqlX7Pl82oCN98Iz0smsIx1GPLFBbTNRCmOHCgzOh8t-nOu2mQ-xjTQtVKVP4nf0roHhbNp4zR3e6w1yYnCGru10-LND1pclaHWRUiMQIn6aX8duZZ3BMruEA__"
+                  src={Image3}
                   className="object-cover absolute inset-0 size-full"
                 />
                 <div className="relative shrink-0 mt-60 rounded-3xl h-[134px] max-md:mt-10 max-md:max-w-full" />
@@ -582,7 +585,7 @@ const Bootcamp = () => {
               <div className="flex overflow-hidden relative flex-col grow pt-20 pb-7 min-h-[485px] max-md:mt-10 max-md:max-w-full">
                 <img
                   loading="lazy"
-                  srcSet="https://s3-alpha-sig.figma.com/img/6179/c18f/908fa610df24a90e1a38a5acf9486bae?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MiHacF~bljJdY8LbSmmwSzjicnu1s3NslCRkmNxd41oK2JMKCK2Xb0IStHuUOgGma94QlvGXrxTFc2DtQztm7h8nzx7CF3qtWW4ZuBLi1cditQEgTtSd1aC6czIFF2LVqPSI8vrtqVFX0ZiFY3EPx~8haadzfzvgHEaZKTbCcqqVp~yYaxPoeNDSBN0CTWEHGMmoRSuUb6Nx~GmrEoTh2Hm9ZWuobhEJVkm3JVIluS4MsHAp21QH18xDAoGoFiLsGLpFiGFoUR~2~ux6R6UZCsxiHc0G-dTBuzXsrlts6B3wbHM9lTfHZSMDul7s4pyWsOTzwhk3f7ZnMr1~TqNdFg__"
+                  src={Image2}
                   className="object-cover absolute inset-0 size-full"
                 />
                 <div className="relative shrink-0 mt-60 rounded-3xl h-[134px] max-md:mt-10 max-md:max-w-full" />
@@ -625,7 +628,7 @@ const Bootcamp = () => {
               <div className="flex overflow-hidden relative flex-col grow pt-20 pb-7 min-h-[485px] max-md:mt-10 max-md:max-w-full">
                 <img
                   loading="lazy"
-                  srcSet="https://s3-alpha-sig.figma.com/img/aa2f/2de5/a73700c98ce7873c8a7be956fb6b3a31?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Q3oi-uOsbINmKQzCYbnVUvAdGCBMvRET-cSKFFcEUnsRk1OxhnOHpC59SK5OyiXMtbYbYUs8vFKKbfJXZboyvCnLoRh683yO1-Q4WnP3omeFQcVlkxCMkCMccIajP99zXwfVz95jNoWEHDfu9Q3SRf1Gxi~EfCWI4ygGxEQLrmKGwbhwN8pT1li6HS8TjCrJy8Q786~u6CwPsp7X1y9p0eGEJoAWoasHijoFr8JjZrwHyeyBNH1GOZtYamk-EB8esZx6oabIzSlxH1zTVDO9Qje46KT3t0ITQuWH4OAJCezE-6i2d7e5qTwW50Lf~szabYBgfc-JMIL7-FaJtX52og__"
+                  src={Image1}
                   className="object-cover absolute inset-0 size-full"
                 />
                 <div className="relative shrink-0 mt-60 rounded-3xl h-[134px] max-md:mt-10 max-md:max-w-full" />
