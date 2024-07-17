@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Components/Navbar/Navbar'
 import hireimg from '../assets/image/hireimg.png'
+import { Link } from 'react-router-dom'
 
 const Hire = () => {
   return (
@@ -208,7 +209,8 @@ const Hire = () => {
         <div className="flex justify-center items-center px-16 py-3 w-full text-sm font-medium tracking-normal leading-6 text-white bg-zinc-900 max-md:px-5 max-md:max-w-full">
           <div className="flex gap-5 py-2.5">
             <div>@2023 Estatein. All Rights Reserved.</div>
-            <div>Terms & Conditions</div>
+            <Link to={'/termsandconditions'}><div>Terms & Conditions</div></Link> 
+
           </div>
         </div>
       </div>

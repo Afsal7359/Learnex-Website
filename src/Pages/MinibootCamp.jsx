@@ -3,6 +3,7 @@ import Navbar from '../Components/Navbar/Navbar'
 import Faq from '../Components/FAQ/Faq'
 import Content from '../Components/DayCard/Content'
 import Programimg from '../assets/image/program.png'
+import { Link } from 'react-router-dom'
 
 const MinibootCamp = () => {
   return (
@@ -508,7 +509,8 @@ const MinibootCamp = () => {
           <div className="flex justify-center items-center px-16 py-3 text-sm font-medium tracking-normal leading-6 text-white bg-zinc-900 max-md:px-5 max-md:max-w-full">
             <div className="flex gap-5 py-2.5">
               <div>@2023 Estatein. All Rights Reserved.</div>
-              <div>Terms & Conditions</div>
+              <Link to={'/termsandconditions'}><div>Terms & Conditions</div></Link> 
+
             </div>
           </div>
         </div>
