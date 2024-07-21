@@ -10,6 +10,7 @@ import Image1 from '../assets/image/testmonial3.png'
 import Image2 from '../assets/image/testmonial2.png'
 import Image3 from '../assets/image/testmonial4.png'
 import { Link } from 'react-router-dom';
+import Footer from '../Components/Footer/Footer';
 
 
 const Bootcamp = () => {
@@ -17,11 +18,11 @@ const Bootcamp = () => {
     <>
  <div className="flex flex-col items-center bg-neutral-900" style={{overflow:"hidden"}}>
        <Navbar/>
-      <div className="mt-10 px-10 w-full max-w-[1266px] max-md:mt-10 max-md:max-w-full">
+      <div className="mt-10 px-10 w-full max-w-[1266px] max-md:mt-10 max-md:max-w-full" style={{backgroundColor:"#1b2031"}}>
         <div className="flex gap-5 max-md:flex-col max-md:gap-0">
           <div className="flex flex-col w-[55%] max-md:ml-0 max-md:w-full">
             <div className="flex flex-col self-stretch px-5 my-auto text-lg font-medium text-white max-md:mt-10 max-md:max-w-full">
-              <div className="text-6xl font-bold bg-clip-text bg-[linear-gradient(92deg,#FF8E26_30.11%,#9C4DFF_80.07%)] leading-[70px] max-md:max-w-full max-md:text-4xl max-md:leading-[54px]">
+              <div className="text-6xl font-bold bg-clip-text bg-[linear-gradient(92deg,#FF8E26_30.11%,#9C4DFF_80.07%)] leading-[70px] max-md:max-w-full max-md:text-4xl max-md:leading-[54px]" style={{backgroundImage: 'linear-gradient(92deg, #FF8E26 30.11%, #9C4DFF 80.07%)', WebkitBackgroundClip: 'text', color: 'transparent' }} >
                 UI UX Design <span className="text-white">Bootcamp</span>
               </div>
               <div className="mt-4 tracking-normal leading-7 text-slate-400 max-md:max-w-full">
@@ -38,7 +39,7 @@ const Bootcamp = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col ml-5 w-[45%] max-md:ml-0 max-md:w-full">
+          <div className="flex flex-col my-10 ml-5 w-[45%] max-md:ml-0 max-md:w-full">
             <div className="flex flex-col grow px-6 py-10 w-full bg-blue-800 rounded-xl max-md:px-5 max-md:mt-10 max-md:max-w-full">
               <div className="text-3xl font-bold text-white max-md:max-w-full">
                 Bootcamp Start on, Jan 18
@@ -58,8 +59,13 @@ const Bootcamp = () => {
                   Limited seats of 25
                 </div>
               </div>
-              <div className="flex gap-2 justify-center self-start px-5 py-3 mt-5 text-base font-semibold leading-6 text-white capitalize rounded-lg">
-                <div>Enroll Now</div>
+              <div className="flex gap-2 justify-center self-start px-5 py-3 mt-5 text-base font-semibold leading-6 text-white capitalize rounded-lg" style={{background: 'linear-gradient(92deg, #FF8E26 30.11%, #9C4DFF 80.07%)', WebkitBackgroundClip: 'text', color: 'white' }}>
+                <div>
+                <Link className="capitalize" to={"/checkout"} 
+                  state={{ CourseName: "UI UX Design Bootcamp",
+                    Courseprice: 45000,
+                    CourseDuration: "14 Week (4 Month)" }}
+                    >Enroll Now</Link></div>
                 <img
                   loading="lazy"
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/417ebaf87989c6a2d2be7b3650cdf9bc6b1a73b658be2879d7b2968d334853d0?apiKey=da51d65c0c6a4171975c02c87160b4fc&"
@@ -82,7 +88,7 @@ const Bootcamp = () => {
           </div>
           <div className="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
             <div className="flex flex-col grow justify-center self-stretch px-5 py-3.5 w-full bg-gray-800 rounded-xl border border-solid border-neutral-800 leading-[150%] max-md:mt-10">
-              <div className="text-xl font-bold text-white">12 Days</div>
+              <div className="text-xl font-bold text-white">16 Weeks</div>
               <div className="text-base tracking-normal text-slate-400">
                 Fellowship Timeline
               </div>
@@ -402,7 +408,7 @@ const Bootcamp = () => {
 
 
 
-      <div className="mt-32 text-6xl px-6 font-bold text-white bg-clip-text leading-[69.6px] max-md:mt-10 max-md:max-w-full max-md:text-4xl" >
+      <div className="mt-32 text-6xl px-6 font-bold text-white bg-clip-text leading-[69.6px] max-md:mt-10 max-md:max-w-full max-md:text-4xl"  style={{backgroundImage: 'linear-gradient(92deg, #FF8E26 70.11%, #9C4DFF 90.07%)', WebkitBackgroundClip: 'text', color: 'transparent' }}>
         <span className="text-white">Spark Your Curiosity,</span> Dive Deep
       </div>
       <div className="mt-5 text-lg px-12 font-medium tracking-normal leading-7 text-slate-400 max-md:max-w-full">
@@ -412,7 +418,7 @@ const Bootcamp = () => {
         letters, as opposed to using 'Content here, content here', making it
         look like readable English.
       </div>
-      <div className="flex flex-col justify-center  p-10 mt-16 w-full max-w-screen-xl rounded-2xl border border-solid bg-neutral-800 border-neutral-800 max-md:px-5 max-md:mt-10 max-md:max-w-full">
+      <div className="flex flex-col justify-center  p-10 mt-16 w-full max-w-screen-xl rounded-2xl border border-solid bg-neutral-800 border-neutral-800 max-md:px-5 max-md:mt-10 max-md:max-w-full" >
         <div className="flex gap-5 justify-center max-md:flex-wrap">
           <div className="flex justify-center items-center self-start p-5 bg-yellow-950 h-[93px] rounded-[110px] w-[93px]">
             <img
@@ -422,7 +428,7 @@ const Bootcamp = () => {
             />
           </div>
           <div className="flex flex-col flex-1 justify-center font-semibold max-md:max-w-full">
-            <div className="text-3xl leading-10 text-center text-white max-md:max-w-full">
+            <div className="text-3xl leading-10 text-left text-white max-md:max-w-full">
               Design
             </div>
             <div className="mt-5 text-lg leading-7 text-slate-400 max-md:max-w-full">
@@ -444,7 +450,7 @@ const Bootcamp = () => {
             />
           </div>
           <div className="flex flex-col flex-1 justify-center self-start font-semibold leading-[150%] max-md:max-w-full">
-            <div className="text-3xl text-center text-white max-md:max-w-full">
+            <div className="text-3xl text-left text-white max-md:max-w-full">
               Success Skills
             </div>
             <div className="mt-5 text-lg text-slate-400 max-md:max-w-full">
@@ -456,7 +462,7 @@ const Bootcamp = () => {
       </div>
       <div className="flex flex-col self-stretch px-20 py-16 mt-44 w-full bg-blue-950 max-md:px-5 max-md:mt-10 max-md:max-w-full">
       <div className="self-center text-5xl font-bold text-white bg-clip-text bg-[linear-gradient(92deg,#FF8E26_30.11%,#9C4DFF_80.07%)] leading-[57.6px] max-md:max-w-full max-md:text-4xl">
-          Learnex Students Work at Amazing Companies
+          Learnex Students <span style={{backgroundImage: 'linear-gradient(92deg, #FF8E26 30.11%, #9C4DFF 80.07%)', WebkitBackgroundClip: 'text', color: 'transparent' }}> Work at Amazing Companies</span>
         </div>
       <Swiper
                 modules={[ Pagination,Autoplay]}
@@ -666,11 +672,11 @@ const Bootcamp = () => {
                   </div>
                   <div className="flex flex-col ml-5 w-[79%] max-md:ml-0 max-md:w-full">
                     <div className="flex flex-col grow justify-center font-semibold leading-[150%] max-md:mt-7">
-                      <div className="text-2xl text-slate-400">
+                      <div className="text-1xl text-slate-400">
                         Average Salary
                       </div>
-                      <div className="mt-4 text-5xl text-center text-white max-md:text-4xl">
-                        8-12 Lakhs
+                      <div className="mt-4 text-5xl text-left text-white max-md:text-4xl">
+                        6-9 Lakhs
                       </div>
                     </div>
                   </div>
@@ -692,11 +698,11 @@ const Bootcamp = () => {
                 </div>
                 <div className="flex flex-col ml-5 w-[79%] max-md:ml-0 max-md:w-full">
                   <div className="flex flex-col grow justify-center self-stretch font-semibold leading-[150%] max-md:mt-10">
-                    <div className="text-2xl text-slate-400">
-                      Highest salary of past learners at nextleap
+                    <div className="text-1xl text-slate-400">
+                    Career students pursue
                     </div>
                     <div className="mt-2.5 text-5xl text-white max-md:text-4xl">
-                      31 Lakhs
+                    UI UX Designer Product Designer UI Designer
                     </div>
                   </div>
                 </div>
@@ -705,7 +711,7 @@ const Bootcamp = () => {
           </div>
         </div>
       </div>
-      <div className="mt-24 text-6xl font-bold bg-clip-text bg-[linear-gradient(92deg,#FF8E26_30.11%,#9C4DFF_80.07%)] leading-[69.6px] max-md:mt-10 max-md:max-w-full max-md:text-4xl" style={{ backgroundImage: 'linear-gradient(92deg, #FF8E26 30.11%, #9C4DFF 80.07%)', WebkitBackgroundClip: 'text', color: 'transparent' }}>
+      <div className="mt-24  text-6xl font-bold bg-clip-text bg-[linear-gradient(92deg,#FF8E26_30.11%,#9C4DFF_80.07%)] leading-[69.6px] max-md:mt-10 max-md:max-w-full max-md:text-4xl" style={{ backgroundImage: 'linear-gradient(92deg, #FF8E26 30.11%, #9C4DFF 80.07%)', WebkitBackgroundClip: 'text', color: 'transparent' }}>
         Outcomes
       </div>
       <div className="mt-2 text-lg font-medium tracking-normal leading-8 text-slate-400 max-md:max-w-full">
@@ -724,11 +730,10 @@ const Bootcamp = () => {
                   srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/befa8fe0dc3f732d7f64d880e3a924c2d30ae72729e70c466dfb6f9e09d3a95d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/befa8fe0dc3f732d7f64d880e3a924c2d30ae72729e70c466dfb6f9e09d3a95d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/befa8fe0dc3f732d7f64d880e3a924c2d30ae72729e70c466dfb6f9e09d3a95d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/befa8fe0dc3f732d7f64d880e3a924c2d30ae72729e70c466dfb6f9e09d3a95d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/befa8fe0dc3f732d7f64d880e3a924c2d30ae72729e70c466dfb6f9e09d3a95d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/befa8fe0dc3f732d7f64d880e3a924c2d30ae72729e70c466dfb6f9e09d3a95d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/befa8fe0dc3f732d7f64d880e3a924c2d30ae72729e70c466dfb6f9e09d3a95d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/befa8fe0dc3f732d7f64d880e3a924c2d30ae72729e70c466dfb6f9e09d3a95d?apiKey=da51d65c0c6a4171975c02c87160b4fc&"
                   className="shrink-0 max-w-full aspect-square w-[103px]"
                 />
-                <div className="flex-1 my-auto">Built for Growth</div>
+                <div className="flex-1 my-auto">Master Essential Skills</div>
               </div>
               <div className="mt-5 text-base tracking-normal leading-6 text-slate-300">
-                Our graduates see an average of 10%-30% salary growth even
-                beyond their first job after SOAL.
+              Through hands-on projects and expert guidance, you'll hone your abilities and build a robust skill set that empowers you to tackle real-world design challenges with confidence.
               </div>
             </div>
           </div>
@@ -740,11 +745,10 @@ const Bootcamp = () => {
                   srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/4ac847df4e1024630216d22b1c2d54aaca8793f445ee391dbbbe2b401436bdbf?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/4ac847df4e1024630216d22b1c2d54aaca8793f445ee391dbbbe2b401436bdbf?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/4ac847df4e1024630216d22b1c2d54aaca8793f445ee391dbbbe2b401436bdbf?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/4ac847df4e1024630216d22b1c2d54aaca8793f445ee391dbbbe2b401436bdbf?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/4ac847df4e1024630216d22b1c2d54aaca8793f445ee391dbbbe2b401436bdbf?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/4ac847df4e1024630216d22b1c2d54aaca8793f445ee391dbbbe2b401436bdbf?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/4ac847df4e1024630216d22b1c2d54aaca8793f445ee391dbbbe2b401436bdbf?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/4ac847df4e1024630216d22b1c2d54aaca8793f445ee391dbbbe2b401436bdbf?apiKey=da51d65c0c6a4171975c02c87160b4fc&"
                   className="shrink-0 max-w-full aspect-square w-[103px]"
                 />
-                <div className="flex-1 my-auto">A Great Portfolio</div>
+                <div className="flex-1 my-auto">Elevate Your Portfolio</div>
               </div>
               <div className="mt-5 text-base tracking-normal leading-6 text-slate-300">
-                Proof of skills make the biggest difference to real world hiring
-                managers & interviewers.{" "}
+              Showcase your talent and expertise with pride. Product design bootcamps provide the perfect platform to create compelling portfolio pieces that highlight your creativity, problem-solving prowess, and attention to detail.
               </div>
             </div>
           </div>
@@ -757,34 +761,33 @@ const Bootcamp = () => {
                   className="shrink-0 max-w-full aspect-square w-[103px]"
                 />
                 <div className="flex-1 my-auto">
-                  Guaranteed Job & Alumni Perks
+                Cultivate Lifelong Learning
                 </div>
               </div>
               <div className="mt-5 text-base tracking-normal leading-6 text-slate-300">
-                You get Mentor Support & Career Assistance on demand, for
-                lifetime. You get privileged access.
+              Embrace a mindset of continuous learning and growth. Product design bootcamps are just the beginning of your journey, providing a solid foundation upon which to build.
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="mt-24 text-6xl font-bold text-white bg-clip-text bg-[linear-gradient(92deg,#FF8E26_30.11%,#9C4DFF_80.07%)] leading-[69.6px] max-md:mt-10 max-md:max-w-full max-md:text-4xl">
+      <div className="mt-24 text-6xl font-bold text-white bg-clip-text bg-[linear-gradient(92deg,#FF8E26_30.11%,#9C4DFF_80.07%)] leading-[69.6px] max-md:mt-10 max-md:max-w-full max-md:text-4xl" style={{backgroundImage: 'linear-gradient(92deg, #FF8E26 30.11%, #9C4DFF 80.07%)', WebkitBackgroundClip: 'text', color: 'transparent' }}>
         <span className="text-white">Tuition</span> Cost & Aid
       </div>
-      <div className="flex flex-col p-5 mt-7 w-full max-w-screen-xl rounded bg-slate-800 max-md:max-w-full">
+      <div className="flex flex-col p-3 mt-7 w-full max-w-screen-xl rounded bg-slate-800 max-md:max-w-full">
         <div className="flex gap-5 justify-between p-5 w-full font-medium rounded bg-slate-700 max-md:flex-wrap max-md:max-w-full">
           <div className="text-4xl leading-10 text-white">Fixed Fee</div>
           <div className="flex gap-5 justify-between whitespace-nowrap">
             <div className="text-4xl leading-10 text-white">₹45,000</div>
-            <div className="text-2xl leading-10 text-slate-300">₹50,000</div>
+            <div className="text-2xl leading-10 text-slate-300"><s>₹50,000</s></div>
           </div>
         </div>
-        <div className="mt-6 text-xl text-white leading-[56px] max-md:max-w-full">
+        {/* <div className="mt-6 text-xl text-white leading-[56px] max-md:max-w-full">
           • Scholarships upto 10,000/- available
           <br />• Plans starting ₹45,000
           <br />• 12 month interest free EMIs
           <br />• Lifetime Career Assistance
-        </div>
+        </div> */}
       </div>
       <div className="flex justify-center items-center p-14 mt-24 w-full max-w-screen-xl text-white max-md:px-5 max-md:mt-10 max-md:max-w-full">
         <div className="flex flex-col w-full max-w-[1046px] max-md:max-w-full">
@@ -871,72 +874,10 @@ const Bootcamp = () => {
     </div>
   </div>
 </div>
-      <div className="flex flex-col self-stretch mt-32 w-full bg-neutral-800 max-md:mt-10 max-md:max-w-full">
-        <div className="justify-between p-20 w-full max-md:px-5 max-md:max-w-full">
-          <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-            <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-              <div className="flex flex-col pt-2 text-2xl font-bold leading-9 max-md:mt-10 max-md:max-w-full">
-                <div className="self-start text-3xl leading-10 text-white">
-                  Learnex
-                </div>
-                <div className="mt-8 text-white bg-clip-text bg-[linear-gradient(92deg,#FF8E26_30.11%,#9C4DFF_80.07%)] max-md:max-w-full">
-                  Email Us :
-                  <span className="text-white"> bootcamps@thelearnex.com</span>
-                </div>
-                <div className="mt-6 text-white bg-clip-text bg-[linear-gradient(92deg,#FF8E26_30.11%,#9C4DFF_80.07%)] max-md:max-w-full">
-                  Call us : +91:8606448435
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
-              <div className="flex grow gap-5 justify-between max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
-                <div className="flex flex-col self-start text-lg font-medium text-white">
-                  <div className="tracking-normal leading-[133%] text-slate-400">
-                    Link
-                  </div>
-                  <div className="mt-6 leading-[122%]">Get in touch</div>
-                  <div className="mt-4 leading-6">
-                    Dotspace Business Center, Total Tower,Near Devankulangara,
-                    EdappallyKochiKerala 682A24
-                  </div>
-                </div>
-                <div className="flex flex-col">
-                  <div className="text-lg font-medium tracking-normal leading-6 text-slate-400">
-                    Social
-                  </div>
-                  <div className="flex flex-col justify-center items-start p-2.5 mt-6 bg-neutral-900 rounded-[58px]">
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/1668cd59bbe54cc61316fb70b8aa63e3f9352bfa0aede87c85fb9de4b607b39c?apiKey=da51d65c0c6a4171975c02c87160b4fc&"
-                      className="w-5 aspect-square"
-                    />
-                  </div>
-                  <div className="flex flex-col justify-center items-start p-2.5 mt-2 bg-neutral-900 rounded-[58px]">
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/4dc9b3f56cc88c31f25f47c7772a4f1293c21a079df09425aad4b54a60888820?apiKey=da51d65c0c6a4171975c02c87160b4fc&"
-                      className="w-5 aspect-square"
-                    />
-                  </div>
-                  <div className="flex flex-col justify-center items-start p-2.5 mt-2 bg-neutral-900 rounded-[58px]">
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/5af0d777e8f5e0003881c956709deb19f6f9c58df52fbd9553d74b8a5f150b3f?apiKey=da51d65c0c6a4171975c02c87160b4fc&"
-                      className="w-5 aspect-square"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="flex justify-center items-center px-16 py-3 w-full text-sm font-medium tracking-normal leading-6 text-white bg-zinc-900 max-md:px-5 max-md:max-w-full">
-          <div className="flex gap-5 py-2.5">
-            <div>@2023 Estatein. All Rights Reserved.</div>
-            <Link to={'/termsandconditions'}><div>Terms & Conditions</div></Link> 
-            </div>
-        </div>
-      </div>
+      
+      {/* footer start  */}
+      <Footer/>
+      {/* footer end  */}
     </div>
     </>
   )

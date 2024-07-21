@@ -7,6 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import './App.css'
+const Checkout = lazy(()=>import("./Pages/Checkout/Checkout"))
 const Refund = lazy(()=> import("./Pages/Terms/Refund"));
 const Privacy = lazy(()=>import("./Pages/Terms/Privacy"));
 const Terms = lazy(()=>import("./Pages/Terms/Terms"));
@@ -29,6 +30,10 @@ function App() {
           <Route path="/bootcamp" element={<Bootcamp/>}/>
           <Route path="/contact-us" element={<Contact/>}/>
           <Route path="/hire-from-us" element={<Hire/>}/>
+
+          <Route path="/checkout" element={<Checkout/>}/>
+         
+
           <Route path="/termsandconditions" element={<Terms/>}/>
           <Route path="/refundandcancellation" element={<Refund/>}/>
           <Route path="/privacypolicy" element={<Privacy/>}/>

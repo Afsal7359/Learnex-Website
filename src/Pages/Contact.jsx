@@ -1,12 +1,13 @@
 import React from 'react'
 import Navbar from '../Components/Navbar/Navbar'
 import { Link } from 'react-router-dom'
+import Footer from '../Components/Footer/Footer'
 
 const Contact = () => {
   return (
     <div className="flex flex-col bg-neutral-900">
      <Navbar/>
-    <div className="flex flex-col justify-center w-full max-md:max-w-full">
+    <div className="flex flex-col justify-center w-full mt-10 max-md:max-w-full">
       <img
         loading="lazy"
         srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/a75b516311dd092df436216b8eb6c083384b954b629f199d49d5052f3826b7f1?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/a75b516311dd092df436216b8eb6c083384b954b629f199d49d5052f3826b7f1?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/a75b516311dd092df436216b8eb6c083384b954b629f199d49d5052f3826b7f1?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/a75b516311dd092df436216b8eb6c083384b954b629f199d49d5052f3826b7f1?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/a75b516311dd092df436216b8eb6c083384b954b629f199d49d5052f3826b7f1?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/a75b516311dd092df436216b8eb6c083384b954b629f199d49d5052f3826b7f1?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/a75b516311dd092df436216b8eb6c083384b954b629f199d49d5052f3826b7f1?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/a75b516311dd092df436216b8eb6c083384b954b629f199d49d5052f3826b7f1?apiKey=da51d65c0c6a4171975c02c87160b4fc&"
@@ -107,88 +108,10 @@ const Contact = () => {
         do not agree, please do not use the website.
       </div>
     </div>
-    <div className="flex flex-col mt-5 w-full bg-neutral-800 max-md:max-w-full">
-      <div className="justify-between p-20 w-full max-md:px-5 max-md:max-w-full">
-        <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-          <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-            <div className="flex flex-col font-bold max-md:mt-10 max-md:max-w-full">
-              <div className="flex gap-0.5 self-start py-1.5 text-3xl leading-10 text-white whitespace-nowrap">
-                <div className="grow">Learnex</div>
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/4a13f397918a17d8362e70b57baf43942df4fea2114e8d51c7a3ba5b5aa2e3b1?apiKey=da51d65c0c6a4171975c02c87160b4fc&"
-                  className="shrink-0 self-start w-6 aspect-square"
-                />
-              </div>
-              <div className="flex flex-col mt-6 text-2xl leading-9 max-md:max-w-full">
-                <div className="text-white bg-clip-text bg-[linear-gradient(92deg,#FF8E26_30.11%,#9C4DFF_80.07%)] max-md:max-w-full">
-                  Email Us :
-                  <span className="text-white">
-                    {" "}
-                    bootcamps@thelearnex.com
-                  </span>
-                </div>
-                <div className="flex flex-col justify-center mt-6 text-white max-md:max-w-full">
-                  <div className="bg-clip-text bg-[linear-gradient(92deg,#FF8E26_30.11%,#9C4DFF_80.07%)] max-md:max-w-full">
-                    Call us : +91:8606448435
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
-            <div className="flex grow gap-5 justify-between max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
-              <div className="flex flex-col self-start text-lg font-medium">
-                <div className="tracking-normal leading-[133%] text-slate-400">
-                  Link
-                </div>
-                <div className="flex flex-col mt-6 text-white">
-                  <div className="leading-[122%]">Get in touch</div>
-                  <div className="mt-4 leading-6">
-                    Dotspace Business Center, Total TowerNear Devankulangara,
-                    EdappallyKochiKerala 682A24
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col">
-                <div className="text-lg font-medium tracking-normal leading-6 text-slate-400">
-                  Social
-                </div>
-                <div className="flex flex-col justify-center mt-6">
-                  <div className="flex flex-col justify-center items-start p-2.5 bg-neutral-900 rounded-[58px]">
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/1668cd59bbe54cc61316fb70b8aa63e3f9352bfa0aede87c85fb9de4b607b39c?apiKey=da51d65c0c6a4171975c02c87160b4fc&"
-                      className="w-5 aspect-square"
-                    />
-                  </div>
-                  <div className="flex flex-col justify-center items-start p-2.5 mt-2 bg-neutral-900 rounded-[58px]">
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/c3e8fa755627f08df91b94472c0abcb8bfb75ae8c775f1f5cfe7ed4928cd9abc?apiKey=da51d65c0c6a4171975c02c87160b4fc&"
-                      className="w-5 aspect-square"
-                    />
-                  </div>
-                  <div className="flex flex-col justify-center items-start p-2.5 mt-2 bg-neutral-900 rounded-[58px]">
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/0cd8d56be0602d656fad40c8cd0a38b5cfd6b444f8ec8af086e163d13fbbb793?apiKey=da51d65c0c6a4171975c02c87160b4fc&"
-                      className="w-5 aspect-square"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="flex justify-center items-center px-16 py-3 w-full text-sm font-medium tracking-normal leading-6 text-white bg-zinc-900 max-md:px-5 max-md:max-w-full">
-        <div className="flex gap-5 py-2.5">
-          <div>@2023 Estatein. All Rights Reserved.</div>
-          <Link to={'/termsandconditions'}><div>Terms & Conditions</div></Link> 
-          </div>
-      </div>
-    </div>
+ 
+ {/* footer start  */}
+ <Footer/>
+ {/* footer end  */}
   </div>
   )
 }

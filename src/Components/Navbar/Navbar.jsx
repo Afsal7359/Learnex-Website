@@ -19,8 +19,8 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex relative z-10 flex-col justify-center py-5 mt-0 w-full bg-zinc-900 max-md:max-w-full">
-      <div className="flex gap-5 justify-between px-20 py-3.5 w-full max-md:flex-wrap max-md:px-5 max-md:max-w-full">
+    <div className="flex relative z-10 flex-col justify-center py-5 mt-0 w-full bg-dark-900 max-md:max-w-full">
+      <div className="flex gap-5 justify-between px-20 pt-3.5 w-full max-md:flex-wrap max-md:px-5 max-md:max-w-full">
         <div className="py-2 text-3xl font-bold leading-10 text-white whitespace-nowrap">
           Learnex
         </div>
@@ -31,7 +31,7 @@ const Navbar = () => {
               to={item.path}
               className={`cursor-pointer px-5 py-3 whitespace-nowrap ${
                 location.pathname === item.path
-                  ? 'border-b-4 border-b-orange-400'
+                  ? 'active-border'
                   : ''
               }`}
             >

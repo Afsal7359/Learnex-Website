@@ -4,6 +4,9 @@ import Faq from '../Components/FAQ/Faq'
 import Content from '../Components/DayCard/Content'
 import Programimg from '../assets/image/program.png'
 import { Link } from 'react-router-dom'
+import bootimg1 from '../assets/image/boot2.png'
+import bootimg2 from '../assets/image/boot1.png'
+import Footer from '../Components/Footer/Footer'
 
 const MinibootCamp = () => {
   return (
@@ -15,12 +18,12 @@ const MinibootCamp = () => {
           <Navbar/>
 
 
-          <div className="mt-10 px-10 w-full max-w-[1266px] max-md:mt-10 max-md:max-w-full">
+          <div className="mt-10 px-0  w-full max-w-[1266px] max-md:mt-10 max-md:max-w-full" style={{backgroundColor:"#1b2031"}}>
         <div className="flex gap-5 max-md:flex-col max-md:gap-0">
           <div className="flex flex-col w-[55%] max-md:ml-0 max-md:w-full">
             <div className="flex flex-col self-stretch px-5 my-auto text-lg font-medium text-white max-md:mt-10 max-md:max-w-full">
-              <div className="text-6xl font-bold bg-clip-text bg-[linear-gradient(92deg,#FF8E26_30.11%,#9C4DFF_80.07%)] leading-[70px] max-md:max-w-full max-md:text-4xl max-md:leading-[54px]">
-                UI UX Design <span className="text-white">Mini Bootcamp</span>
+              <div className="text-6xl font-bold bg-clip-text bg-[linear-gradient(92deg,#FF8E26_30.11%,#9C4DFF_80.07%)] leading-[70px] max-md:max-w-full max-md:text-4xl max-md:leading-[54px]" style={{ backgroundImage: 'linear-gradient(92deg, #FF8E26 30.11%, #9C4DFF 80.07%)', WebkitBackgroundClip: 'text', color: 'transparent' }}>
+                UI UX Design <br /> <span className="text-white">Mini Bootcamp</span>
               </div>
               <div className="mt-4 tracking-normal leading-7 text-slate-400 max-md:max-w-full">
               Explore Our UI/UX Design Mini Bootcamp. Dive into the principles of user-centric 
@@ -36,8 +39,8 @@ const MinibootCamp = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col ml-5 w-[45%] max-md:ml-0 max-md:w-full">
-            <div className="flex flex-col grow px-6 py-10 w-full bg-blue-800 rounded-xl max-md:px-5 max-md:mt-10 max-md:max-w-full">
+          <div className="flex flex-col my-10 ml-5 w-[45%] max-md:ml-0 max-md:w-full">
+            <div className="flex flex-col grow px-6 py-10  w-full bg-blue-800 rounded-xl max-md:px-5 max-md:mt-10 max-md:max-w-full">
               <div className="text-3xl font-bold text-white max-md:max-w-full">
                 Bootcamp Start on, July 14
               </div>
@@ -56,8 +59,13 @@ const MinibootCamp = () => {
                   Limited seats of 30
                 </div>
               </div>
-              <div className="flex gap-2 justify-center self-start px-5 py-3 mt-5 text-base font-semibold leading-6 text-white capitalize rounded-lg" >
-                <div>Enroll Now</div>
+              <div className="flex gap-2 justify-center self-start px-5 py-3 mt-5 text-base font-semibold leading-6 text-white capitalize rounded-lg" style={{ background: 'linear-gradient(92deg, #FF8E26 30.11%, #9C4DFF 80.07%)',  color: 'white' }}>
+                <div>
+                <Link className="capitalize" to={"/checkout"}  
+                state={{ CourseName: "UI UX Design Min Bootcamp",
+                Courseprice: 1999,
+                CourseDuration: "12 Days Program" }}>Enroll Now</Link>
+                </div>
                 <img
                   loading="lazy"
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/417ebaf87989c6a2d2be7b3650cdf9bc6b1a73b658be2879d7b2968d334853d0?apiKey=da51d65c0c6a4171975c02c87160b4fc&"
@@ -72,7 +80,7 @@ const MinibootCamp = () => {
         <div className="flex gap-5 max-md:flex-col max-md:gap-0">
           <div className="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
             <div className="flex flex-col grow justify-center self-stretch px-5 py-3.5 w-full bg-gray-800 rounded-xl border border-solid border-neutral-800 leading-[150%] max-md:mt-10">
-              <div className="text-xl font-bold text-white">Live</div>
+              <div className="text-xl font-bold" style={{color:"#d4e328"}} >Live</div>
               <div className="text-base tracking-normal text-slate-400">
                 Happy Students
               </div>
@@ -80,7 +88,7 @@ const MinibootCamp = () => {
           </div>
           <div className="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
             <div className="flex flex-col grow justify-center self-stretch px-5 py-3.5 w-full bg-gray-800 rounded-xl border border-solid border-neutral-800 leading-[150%] max-md:mt-10">
-              <div className="text-xl font-bold text-white">12 Days</div>
+              <div className="text-xl font-bold text-white" style={{color:"#d4e328"}} >12 Days</div>
               <div className="text-base tracking-normal text-slate-400">
                 Fellowship Timeline
               </div>
@@ -88,7 +96,7 @@ const MinibootCamp = () => {
           </div>
           <div className="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
             <div className="flex flex-col grow justify-center self-stretch px-5 py-3.5 w-full bg-gray-800 rounded-xl border border-solid border-neutral-800 leading-[150%] max-md:mt-10">
-              <div className="text-xl font-bold text-white">Metorship</div>
+              <div className="text-xl font-bold text-white" style={{color:"#d4e328"}} >Metorship</div>
               <div className="text-base tracking-normal text-slate-400">
                 With Exprience designer
               </div>
@@ -96,7 +104,7 @@ const MinibootCamp = () => {
           </div>
           <div className="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
             <div className="flex flex-col grow justify-center self-stretch px-5 py-3.5 w-full bg-gray-800 rounded-xl border border-solid border-neutral-800 leading-[150%] max-md:mt-10">
-              <div className="text-xl font-bold text-white">
+              <div className="text-xl font-bold text-white" style={{color:"#d4e328"}} >
                 Limited batch size
               </div>
               <div className="text-base tracking-normal text-slate-400">
@@ -106,7 +114,7 @@ const MinibootCamp = () => {
           </div>
         </div>
       </div>
-          <div className="mt-32 text-6xl font-bold text-white bg-clip-text bg-[linear-gradient(92deg,#FF8E26_30.11%,#9C4DFF_80.07%)] leading-[69.6px] max-md:mt-10 max-md:max-w-full max-md:text-4xl">
+          <div className="mt-32 text-6xl font-bold text-white bg-clip-text bg-[linear-gradient(92deg,#FF8E26_30.11%,#9C4DFF_80.07%)] leading-[69.6px] max-md:mt-10 max-md:max-w-full max-md:text-4xl" style={{ backgroundImage: 'linear-gradient(92deg, #FF8E26 30.11%, #9C4DFF 80.07%)', WebkitBackgroundClip: 'text', color: 'transparent' }}>
             Comming <span className="text-white">Soon</span>
           </div>
           <div className="mt-14 w-full max-w-[1270px] max-md:mt-10 max-md:max-w-full">
@@ -120,10 +128,10 @@ const MinibootCamp = () => {
                           <div className="flex overflow-hidden relative flex-col justify-center py-0.5 aspect-square w-[67px]">
                             <img
                               loading="lazy"
-                              srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/cfc37d53b527264a809296dffa3eb5e5a02bb32fe2ee15edc6d6cc2cd33512c6?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/cfc37d53b527264a809296dffa3eb5e5a02bb32fe2ee15edc6d6cc2cd33512c6?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/cfc37d53b527264a809296dffa3eb5e5a02bb32fe2ee15edc6d6cc2cd33512c6?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/cfc37d53b527264a809296dffa3eb5e5a02bb32fe2ee15edc6d6cc2cd33512c6?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/cfc37d53b527264a809296dffa3eb5e5a02bb32fe2ee15edc6d6cc2cd33512c6?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/cfc37d53b527264a809296dffa3eb5e5a02bb32fe2ee15edc6d6cc2cd33512c6?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/cfc37d53b527264a809296dffa3eb5e5a02bb32fe2ee15edc6d6cc2cd33512c6?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/cfc37d53b527264a809296dffa3eb5e5a02bb32fe2ee15edc6d6cc2cd33512c6?apiKey=da51d65c0c6a4171975c02c87160b4fc&"
+                              src={bootimg2}
                               className="object-cover absolute inset-0 size-full"
                             />
-                            <div className="relative shrink-0 w-full h-16 bg-amber-500" />
+                            {/* <div className="relative shrink-0 w-full h-16 bg-amber-500" /> */}
                           </div>
                         </div>
                       </div>
@@ -146,13 +154,13 @@ const MinibootCamp = () => {
                   <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                     <div className="flex flex-col w-[21%] max-md:ml-0 max-md:w-full">
                       <div className="flex justify-center items-center px-3.5 mx-auto bg-indigo-400 bg-opacity-20 h-[108px] rounded-[120px] w-[108px] max-md:mt-10">
-                        <div className="flex overflow-hidden relative flex-col pb-2 aspect-square w-[79px]">
+                        <div className="flex overflow-hidden relative flex-col pb-2 aspect-square w-[67px]">
                           <img
                             loading="lazy"
-                            srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/cfc37d53b527264a809296dffa3eb5e5a02bb32fe2ee15edc6d6cc2cd33512c6?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/cfc37d53b527264a809296dffa3eb5e5a02bb32fe2ee15edc6d6cc2cd33512c6?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/cfc37d53b527264a809296dffa3eb5e5a02bb32fe2ee15edc6d6cc2cd33512c6?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/cfc37d53b527264a809296dffa3eb5e5a02bb32fe2ee15edc6d6cc2cd33512c6?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/cfc37d53b527264a809296dffa3eb5e5a02bb32fe2ee15edc6d6cc2cd33512c6?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/cfc37d53b527264a809296dffa3eb5e5a02bb32fe2ee15edc6d6cc2cd33512c6?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/cfc37d53b527264a809296dffa3eb5e5a02bb32fe2ee15edc6d6cc2cd33512c6?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/cfc37d53b527264a809296dffa3eb5e5a02bb32fe2ee15edc6d6cc2cd33512c6?apiKey=da51d65c0c6a4171975c02c87160b4fc&"
+                            src={bootimg1}
                             className="object-cover absolute inset-0 size-full"
                           />
-                          <div className="relative shrink-0 bg-indigo-400 h-[71px]" />
+                          {/* <div className="relative shrink-0 bg-indigo-400 h-[71px]" /> */}
                         </div>
                       </div>
                     </div>
@@ -224,12 +232,15 @@ const MinibootCamp = () => {
                 <div className="flex gap-1.5">
                   <div className="text-xl font-bold text-white">₹1,999</div>
                   <div className="text-lg font-medium text-slate-400">
-                    ₹3,999
+                  <s>₹3,999</s>
                   </div>
                 </div>
               </div>
-              <div className="flex gap-2 justify-center px-5 py-3.5 my-auto text-base font-semibold text-white capitalize rounded-lg">
-                <div>Enroll Now</div>
+              <div className="flex gap-2 justify-center px-5 py-3.5 my-auto text-base font-semibold text-white capitalize rounded-lg" style={{ background: 'linear-gradient(92deg, #FF8E26 30.11%, #9C4DFF 80.07%)'}}>
+                <Link className="capitalize" to={"/checkout"}  
+                state={{ CourseName: "UI UX Design Min Bootcamp",
+                Courseprice: 1999,
+                CourseDuration: "12 Days Program" }}>Enroll Now</Link>
                 <img
                   loading="lazy"
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/417ebaf87989c6a2d2be7b3650cdf9bc6b1a73b658be2879d7b2968d334853d0?apiKey=da51d65c0c6a4171975c02c87160b4fc&"
@@ -241,7 +252,7 @@ const MinibootCamp = () => {
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/46804e0c2c01272c0354fd905fa25c37640e6fe96659708851413f9249b84545?apiKey=da51d65c0c6a4171975c02c87160b4fc&"
-            className="self-start mt-28 ml-72 border-2 border-orange-400 border-solid aspect-square stroke-[2px] stroke-orange-400 w-[37px] max-md:mt-10 max-md:ml-2.5"
+            className="self-start mt-28 ml-72  aspect-square stroke-[2px] stroke-orange-400 w-[37px] max-md:mt-10 max-md:ml-2.5"
           />
         </div>
         <div className='relative flex-col px-20 mt-16 w-full max-md:px-5 max-md:mt-10 max-md:max-w-full'>
@@ -325,7 +336,7 @@ const MinibootCamp = () => {
 
 
         <div className="flex flex-col justify-center p-20 mt-32 w-full bg-blue-950 max-w-[1443px] max-md:px-5 max-md:mt-10 max-md:max-w-full">
-          <div className="text-6xl font-bold text-white bg-clip-text leading-[69.6px] max-md:max-w-full max-md:text-4xl" >
+          <div className="text-6xl font-bold text-white bg-clip-text leading-[69.6px] max-md:max-w-full max-md:text-4xl" style={{ backgroundImage: 'linear-gradient(92deg, #FF8E26 30.11%, #9C4DFF 50.07%)', WebkitBackgroundClip: 'text', color: 'transparent' }}>
             <span className="text-white">Live </span>classes Schedule
           </div>
           <div className="mt-20 max-md:mt-10 max-md:max-w-full">
@@ -344,10 +355,10 @@ const MinibootCamp = () => {
                   </div>
                   <div className="flex flex-col justify-center px-5 py-4 mt-5 bg-gray-800 rounded-xl border border-solid border-neutral-800 leading-[150%]">
                     <div className="text-xl font-bold text-white">
-                      Morning Monday
+                    Daily sessions live sessions
                     </div>
                     <div className="text-base tracking-normal text-slate-300">
-                      10:00 AM to 12:00
+                    Hack the design thinking process
                     </div>
                   </div>
                 </div>
@@ -364,10 +375,10 @@ const MinibootCamp = () => {
                   </div>
                   <div className="flex flex-col justify-center px-5 py-4 mt-5 bg-gray-800 rounded-xl border border-solid border-neutral-800 leading-[150%]">
                     <div className="text-xl font-bold text-white">
-                      Morning Monday
+                    3 Dedicated Figma Hours
                     </div>
                     <div className="text-base tracking-normal text-slate-300">
-                      10:00 AM to 12:00
+                    Our dedicated Figma hours wil help you step on to the field  
                     </div>
                   </div>
                 </div>
@@ -384,10 +395,10 @@ const MinibootCamp = () => {
                   </div>
                   <div className="flex flex-col justify-center px-5 py-4 mt-5 bg-gray-800 rounded-xl border border-solid border-neutral-800 leading-[150%]">
                     <div className="text-xl font-bold text-white">
-                      Morning Monday
+                    Job Hunt Master Class
                     </div>
                     <div className="text-base tracking-normal text-slate-300">
-                      10:00 AM to 12:00
+                    Our Job  hunt master class help you plan your career ahead
                     </div>
                   </div>
                 </div>
@@ -396,47 +407,47 @@ const MinibootCamp = () => {
           </div>
         </div>
         <div className="mt-32 text-6xl font-bold text-white bg-clip-text bg-[linear-gradient(92deg,#FF8E26_30.11%,#9C4DFF_80.07%)] leading-[69.6px] max-md:mt-10 max-md:max-w-full max-md:text-4xl">
-          Mini Bootcamp?
+          Mini <span style={{ backgroundImage: 'linear-gradient(92deg, #FF8E26 30.11%, #9C4DFF 80.07%)', WebkitBackgroundClip: 'text', color: 'transparent' }}>Bootcamp?</span> 
         </div>
         <div className="mt-6 text-lg font-medium leading-8 text-slate-400 max-md:max-w-full">
           Read the success stories and heartfelt testimonials from our valued
           clients. Discover why they chose Estatein for their real estate needs.
         </div>
         <div className="flex flex-col p-20 mt-11 w-full text-2xl leading-6 bg-neutral-800 max-w-[1300px] text-slate-200 max-md:px-5 max-md:mt-10 max-md:max-w-full">
-          <div className="flex gap-3.5 justify-between p-5 bg-gray-800 rounded-lg border border-solid border-slate-600 max-md:flex-wrap max-md:px-5">
+          <div className="flex gap-10 justify-start p-5 bg-gray-800 rounded-lg border border-solid border-slate-600 max-md:flex-wrap max-md:px-5">
             <img
               loading="lazy"
               srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&"
               className="shrink-0 aspect-square w-[34px]"
             />
             <div className="my-auto max-md:max-w-full">
-              60+ Hours of content
+            Daily Live Interactive sessions
             </div>
           </div>
-          <div className="flex gap-3.5 justify-between p-5 mt-8 bg-gray-800 rounded-lg border border-solid border-slate-600 max-md:flex-wrap max-md:px-5">
+          <div className="flex gap-10 justify-start p-5 mt-8 bg-gray-800 rounded-lg border border-solid border-slate-600 max-md:flex-wrap max-md:px-5">
             <img
               loading="lazy"
               srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&"
               className="shrink-0 aspect-square w-[34px]"
             />
-            <div className="my-auto max-md:max-w-full">15+ Guest sessions</div>
+            <div className="my-auto max-md:max-w-full">Be portfolio ready by end of the program</div>
           </div>
-          <div className="flex gap-3.5 justify-between p-5 mt-8 bg-gray-800 rounded-lg border border-solid border-slate-600 max-md:flex-wrap max-md:px-5">
+          <div className="flex gap-10 justify-start p-5 mt-8 bg-gray-800 rounded-lg border border-solid border-slate-600 max-md:flex-wrap max-md:px-5">
             <img
               loading="lazy"
               srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&"
               className="shrink-0 aspect-square w-[34px]"
             />
-            <div className="my-auto max-md:max-w-full">8 Live QNA</div>
+            <div className="my-auto max-md:max-w-full">Small batch Size of 30 Students</div>
           </div>
-          <div className="flex gap-3.5 justify-between p-5 mt-8 bg-gray-800 rounded-lg border border-solid border-slate-600 max-md:flex-wrap max-md:px-5">
+          <div className="flex gap-10 justify-start p-5 mt-8 bg-gray-800 rounded-lg border border-solid border-slate-600 max-md:flex-wrap max-md:px-5">
             <img
               loading="lazy"
               srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/3bedf1599d5ff8f0e695ca5f4ce6c8b459cf199d91b6d72a48dd035f2d161f1d?apiKey=da51d65c0c6a4171975c02c87160b4fc&"
               className="shrink-0 aspect-square w-[34px]"
             />
             <div className="my-auto max-md:max-w-full">
-              Premium Growth Hacking community of marketings
+            Job Hunt Master class
             </div>
           </div>
         </div>
@@ -444,76 +455,11 @@ const MinibootCamp = () => {
        {/* FAQ? start */}
        <Faq/>
        {/* FAQ END */}
-        <div className="flex flex-col mt-24 w-full bg-neutral-800 max-w-[1441px] max-md:mt-10 max-md:max-w-full">
-          <div className="justify-between p-20 max-md:px-5 max-md:max-w-full">
-            <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-              <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-                <div className="flex flex-col text-2xl font-bold leading-9 max-md:mt-10 max-md:max-w-full">
-                  <div className="self-start text-3xl leading-10 text-white">
-                    Learnex
-                  </div>
-                  <div className="mt-6 text-white bg-clip-text bg-[linear-gradient(92deg,#FF8E26_30.11%,#9C4DFF_80.07%)] max-md:max-w-full">
-                    Email Us :
-                    <span className="text-white">
-                      {" "}
-                      bootcamps@thelearnex.com
-                    </span>
-                  </div>
-                  <div className="mt-6 text-white bg-clip-text bg-[linear-gradient(92deg,#FF8E26_30.11%,#9C4DFF_80.07%)] max-md:max-w-full">
-                    Call us : +91:8606448435
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
-                <div className="flex grow gap-5 justify-between max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
-                  <div className="flex flex-col self-start text-lg font-medium text-white">
-                    <div className="tracking-normal leading-[133%] text-slate-400">
-                      Link
-                    </div>
-                    <div className="mt-6 leading-[122%]">Get in touch</div>
-                    <div className="mt-4 leading-6">
-                      Dotspace Business Center, Total Tower,Near
-                      Devankulangara, EdappallyKochiKerala 682A24
-                    </div>
-                  </div>
-                  <div className="flex flex-col">
-                    <div className="text-lg font-medium tracking-normal leading-6 text-slate-400">
-                      Social
-                    </div>
-                    <div className="flex flex-col justify-center items-start p-2.5 mt-6 bg-neutral-900 rounded-[58px]">
-                      <img
-                        loading="lazy"
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/1668cd59bbe54cc61316fb70b8aa63e3f9352bfa0aede87c85fb9de4b607b39c?apiKey=da51d65c0c6a4171975c02c87160b4fc&"
-                        className="w-5 aspect-square"
-                      />
-                    </div>
-                    <div className="flex flex-col justify-center items-start p-2.5 mt-2 bg-neutral-900 rounded-[58px]">
-                      <img
-                        loading="lazy"
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/97612c053d518c77dd5ade579be5f1cef32cf63f99a5c0b0b0a2877051ed14ea?apiKey=da51d65c0c6a4171975c02c87160b4fc&"
-                        className="w-5 aspect-square"
-                      />
-                    </div>
-                    <div className="flex flex-col justify-center items-start p-2.5 mt-2 bg-neutral-900 rounded-[58px]">
-                      <img
-                        loading="lazy"
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/7367feb270b2192df276cc1000b4d61bd7e54ecfd729053fca965f3618aa5199?apiKey=da51d65c0c6a4171975c02c87160b4fc&"
-                        className="w-5 aspect-square"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex justify-center items-center px-16 py-3 text-sm font-medium tracking-normal leading-6 text-white bg-zinc-900 max-md:px-5 max-md:max-w-full">
-            <div className="flex gap-5 py-2.5">
-              <div>@2023 Estatein. All Rights Reserved.</div>
-              <Link to={'/termsandconditions'}><div>Terms & Conditions</div></Link> 
+        
+        {/* Footer Start  */}
+            <Footer/>
+         {/* Footer end     */}
 
-            </div>
-          </div>
-        </div>
       </div>
     </div>
     </>
